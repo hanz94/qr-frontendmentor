@@ -12,6 +12,7 @@
   <style>
       section {
         height: 100vh;
+        overflow-wrap: break-word;
       }
       body {
         background-color: hsl(212, 45%, 89%);
@@ -21,7 +22,6 @@
         background-color: white;
         border-radius: 25px;
         width: 325px;
-        height: 490px;
         padding: 20px;
         text-align: center;
       }
@@ -37,28 +37,31 @@
       }
       .section-bold {
         font-weight: 700;
-        font-size: 25px;
+        font-size: 1.5625rem;
         margin: 20px 0;
       }
-      .section-plain {
+      .section-gray {
         font-weight: 100;
         color: gray;
         margin: 0 20px;
+        padding-bottom: 20px;
       }
 
   </style>
 </head>
 <body>
-  <section class="center">
-    <div class="white-box">
+  <main>
+    <section class="center">
+      <div class="white-box">
 
-      <img src="images/image-qr-code.png" />
+        <img src="images/image-qr-code.png" alt="QR code" />
 
-      <div class="section-bold">Improve your front-end skills by building projects</div>
+        <div class="section-bold">Improve your front-end skills by building projects</div>
 
-      <div class="section-plain"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</div>
-  
-    </div>
-  </section> 
+        <div class="section-gray"> Scan the&nbsp;QRcode to visit Frontend Mentor and take your coding skills to the&nbsp;next level</div>
+    
+      </div>
+    </section>
+</main>
 </body>
 </html>
